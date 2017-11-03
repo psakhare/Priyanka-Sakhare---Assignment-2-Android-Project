@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:background="#191919"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:paddingTop="10dp"
+        android:id="@+id/top1"
+        app:srcCompat="@drawable/newsbar1"
+        android:layout_height="20dp" />
+    <ImageView
+        android:background="#191919"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/top1"
+        android:id="@+id/top2"
+        app:srcCompat="@drawable/newsbar"
+        android:layout_height="32dp" />
+
+    <LinearLayout
+        android:id="@+id/linearlayot"
+        android:layout_below="@+id/top2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"
+            android:layout_width="390dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/dish" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="0dp"
+            android:background="#FFFF">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="true"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur"/>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:textSize="13sp"
+                android:layout_weight="0.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="Tuesday, April 28th, 2015"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2.5"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do"
+                android:textAlignment="textStart"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/newsicon"
+        android:layout_marginLeft="250dp"
+        app:srcCompat="@drawable/newsicon"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        />
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_alignBottom="@+id/linearlayot"
+        android:layout_marginLeft="250dp"
+        app:srcCompat="@drawable/fbicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_marginLeft="290dp"
+        android:layout_alignBottom="@+id/linearlayot"
+        app:srcCompat="@drawable/twittericon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+    <ImageView
+        android:layout_alignBottom="@+id/linearlayot"
+        android:layout_marginLeft="330dp"
+        app:srcCompat="@drawable/googleicon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        />
+</RelativeLayout>

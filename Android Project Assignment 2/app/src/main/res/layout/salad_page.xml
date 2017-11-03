@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/saladone"
+            android:layout_width="390dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/saladtwo" />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/saladtwo"
+            android:layout_width="390dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/saladone" />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/saladthree"
+            android:layout_width="390dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/saladthree" />
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/background_image" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Spinach Sweet Crisp Salad"
+        android:textColor="#FFF"/>
+    <ImageView
+        android:id="@+id/priceone"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="110dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/saladoneprice" />
+
+    <ImageView
+        android:id="@+id/backtwo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/background_image" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="The Trio – Soup and Salad"
+        android:textColor="#FFF"/>
+    <ImageView
+        android:id="@+id/pricetwo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="280dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/saladtwoprice" />
+    <ImageView
+        android:id="@+id/backthree"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="470dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/background_image" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Chopped Salad"
+        android:textColor="#FFF"/>
+    <ImageView
+        android:id="@+id/pricethree"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="450dp"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/saladthreeprice" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#313541"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/mainmenutopbar"
+        android:layout_height="40dp" />
+    <ImageView
+        android:id="@+id/restaurent_image"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"
+        app:srcCompat="@drawable/restaurent" />
+
+    <TableLayout
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TableRow >
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/menu" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/news" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/movies" />
+        </TableRow>
+        <TableRow>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/feedback" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/booking" />
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/contact" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
